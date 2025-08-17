@@ -1,16 +1,18 @@
 import streamlit as st
 import pandas as pd
 import plotly.express as px
+import numpy as np
 
-# Page config
+# Page config - FIXED VERSION
 st.set_page_config(
-    page_title="Metro Ridership Impact Calculator",
+    page_title="Metro Ridership Calculator",
     page_icon="🚇",
     layout="wide"
 )
 
+# REPLACE st.subtitle() with st.markdown()
 st.title("🚇 Metro Ridership Impact Calculator")
-st.subtitle("Predict ridership increase from last-mile connectivity improvements")
+st.markdown("### Predict ridership increase from last-mile connectivity improvements")
 
 # Elasticity values from literature
 ELASTICITIES = {
@@ -219,3 +221,4 @@ st.plotly_chart(fig2, use_container_width=True)
 # Footer
 st.markdown("---")
 st.caption("Built using elasticity values from transit research literature | Data sources: TCRP, WRI India, VTPI")
+
