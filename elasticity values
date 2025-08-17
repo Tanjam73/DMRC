@@ -1,0 +1,8 @@
+Core elasticity values from literature
+ELASTICITIES = {
+    "feeder_frequency": 0.5,      # Transit frequency elasticity (TCRP Report 95)
+    "last_mile_wait_time": -0.8,  # Wait time sensitivity (WRI India study)
+    "service_availability": 0.3,  # Service coverage elasticity
+    "feeder_cost": -0.4,          # Fare elasticity for feeder services
+    "integration_quality": 0.6    # Multimodal integration effect
+}
